@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="font-['Roboto'] bg-[#F5F5F5]">
+    <div class="w-full flex flex-row relative">
+
+
+        <!-- up btn  -->
+        <div onclick="topFunction()" id="up-btn" class="hidden fixed right-0 bottom-0 m-3">
+            <p class="p-4 rounded-lg bg-red-600 text-white cursor-pointer z-10">Go top</p>
+        </div>
+
+        <!-- Side Menu -->
+        <div id="side-menu"
+            class="md:flex-1 top-0 bottom-0 z-10 fixed md:static h-screen overflow-auto bg-[#171717] text-white max-w-[280px]">
+            <div onclick="toggleMenu()" class="relative md:hidden">
+                <p
+                    class="absolute text-xl right-0 py-1 px-2 mt-2 mr-2 border-2 border-black hover:bg-slate-500 bg-black rounded-lg text-white cursor-pointer">
+                    Close Menu</p>
+            </div>
+            <img class="w-full h-auto" src="../assets/images/asif19.jpg" alt="img">
+            <section class="">
+                <div class="flex flex-row items-center gap-1">
+                    <img src="../assets/images/phone.svg" alt="img">
+                    <p>880-2-55167100/6208</p>
+                </div>
+                <div class="flex flex-row items-center gap-1">
+                    <img src="../assets/images/mail.svg" alt="img">
+                    <p>hossen_mustafa@iict.buet.ac.bd</p>
+                </div>
+                <div class="flex flex-row items-center gap-1">
+                    <img src="../assets/images/ion_location.svg" alt="img">
+                    <p>Room 713, ECE Building, BUET</p>
+                </div>
+            </section>
+
+            <nav class="mt-5">
+                <a onclick="toggleMenu()" href="../index.html">
+                    <div
+                        class="flex flex-row gap-3 py-4 px-4 border-b-2 border-b-gray-800 border-t-gray-800 border-t-2 shadow-inner shadow-slate-900 hover:bg-gray-800">
+                        <img src="../assets/images/home.svg" alt="img">
+                        <p>HOME</p>
+                    </div>
+                </a>
+                <a onclick="toggleMenu()" href="research.html">
+                    <div
+                        class="flex flex-row gap-3 py-4 px-4 border-b-2 border-b-gray-800 border-t-gray-800 border-t-2 shadow-inner shadow-slate-900 hover:bg-gray-800">
+                        <img src="../assets/images/research.svg" alt="img">
+                        <p>RESEARCH</p>
+                    </div>
+                </a>
+                <a onclick="toggleMenu()" href="../index.html#publication">
+                    <div
+                        class="flex flex-row gap-3 py-4 px-4 border-b-2 border-b-gray-800 border-t-gray-800 border-t-2 shadow-inner shadow-slate-900 hover:bg-gray-800">
+                        <img src="../assets/images/person.svg" alt="img">
+                        <p>Publications</p>
+                    </div>
+                </a>
+                <a onclick="toggleMenu()" href="../index.html#teaching">
+                    <div
+                        class="flex flex-row gap-3 py-4 px-4 border-b-2 border-b-gray-800 border-t-gray-800 border-t-2 shadow-inner shadow-slate-900 hover:bg-gray-800">
+                        <img src="../assets/images/book.svg" alt="img">
+                        <p>Teaching</p>
+                    </div>
+                </a>
+                <a onclick="toggleMenu()" href="thesis_and_projects.html">
+                    <div
+                        class="flex flex-row gap-3 py-4 px-4 border-b-2 border-b-gray-800 border-t-gray-800 border-t-2 shadow-inner shadow-slate-900 hover:bg-gray-800">
+                        <img src="../assets/images/person.svg" alt="img">
+                        <p>THESIS AND PROJECTS</p>
+                    </div>
+                </a>
+                <a onclick="toggleMenu()" href="../index.html#experience">
+                    <div
+                        class="flex flex-row gap-3 py-4 px-4 border-b-2 border-b-gray-800 border-t-gray-800 border-t-2 shadow-inner shadow-slate-900 hover:bg-gray-800">
+                        <img src="../assets/images/research.svg" alt="img">
+                        <p>EXPRIENCE</p>
+                    </div>
+                </a>
+                <a onclick="toggleMenu()" href="../index.html#education">
+                    <div
+                        class="flex flex-row gap-3 py-4 px-4 border-b-2 border-b-gray-800 border-t-gray-800 border-t-2 shadow-inner shadow-slate-900 hover:bg-gray-800">
+                        <img src="../assets/images/info.svg" alt="img">
+                        <p>EDUCATION</p>
+                    </div>
+                </a>
+                <a onclick="toggleMenu()" href="../index.html#accolades">
+                    <div
+                        class="flex flex-row gap-3 py-4 px-4 border-b-2 border-b-gray-800 border-t-gray-800 border-t-2 shadow-inner shadow-slate-900 hover:bg-gray-800">
+                        <img src="../assets/images/accolades.svg" alt="img">
+                        <p>ACCOLADES</p>
+                    </div>
+                </a>
+                <a onclick="toggleMenu()" href="../index.html#affiliation">
+                    <div
+                        class="flex flex-row gap-3 py-4 px-4 border-b-2 border-b-gray-800 border-t-gray-800 border-t-2 shadow-inner shadow-slate-900 hover:bg-gray-800">
+                        <img src="../assets/images/affilitiation.svg" alt="img">
+                        <p>AFFILIATION</p>
+                    </div>
+                </a>
+            </nav>
+
+
+            <ul class="p-4 m-3 rounded-lg bg-[#222222] flex flex-row items-center justify-center gap-3 flex-wrap">
+                <li>
+                    <a href="">
+                        <img src="../assets/images/google_scholar.svg" alt="img">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/images/research_gate.svg" alt="img">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/images/linkedin.svg" alt="img">
+                    </a>
+                </li>
+            </ul>
+
+            <h1 class="mt-4 text-lg font-semibold p-2">Quick Links</h1>
+
+            <ul class="p-2 text-blue-600">
+                <li>
+                    <a href="" class="hover:underline">IICT</a>
+                </li>
+                <li>
+                    <a href="" class="hover:underline">BUET</a>
+                </li>
+                <li>
+                    <a href="" class="hover:underline">University of South Carolina</a>
+                </li>
+                <li>
+                    <a href="" class="hover:underline">Dr. Wenyan Xu</a>
+                </li>
+                <li>
+                    <a href="" class="hover:underline">Bangla Phone Limited</a>
+                </li>
+                <li>
+                    <a href="" class="hover:underline">Commlink Info Text Limited</a>
+                </li>
+                <li>
+                    <a href="" class="hover:underline">Prof. Dr. Md. Nurul Mustafa</a>
+                </li>
+                <li>
+                    <a href="" class="hover:underline">Mustafa Foundation</a>
+                </li>
+            </ul>
+
+            <img class="mt-5 p-4" src="" alt="img">
+
+        </div>
+
+        <!-- Main Content -->
+        <div id="main-content" class="flex-1 h-screen overflow-auto p-4">
+            <div id="menu-btn" onclick="toggleMenu()"
+                class="w-fit mt-4 ml-4 z-10 cursor-pointer border border-black px-4 py-2 rounded-lg hover:bg-black hover:text-white static md:hidden">
+                <p>Menu</p>
+            </div>
+            <h1 class="text-center text-deep-gray text-5xl font-semibold mt-20">Dr. Hossen Asiful Mustafa</h1>
+            <h3 class="text-center text-gray font-semibold mt-10 text-xl text-highlighted-text">PhD, University of South
+                Carolina, USA</h3>
+            <p class="text-center italic text-gray-500 mt-2 leading-8">Professor, Institute of Information and
+                Communication Technology (IICT) <br> Bangladesh University of Engineering and Technology (BUET), Dhaka,
+                Bangladesh</p>
+            <h3 class="text-center font-semibold text-highlighted-text text-xl mt-4">Research Interest: Wireless
+                Networks, Network Security, Cyber Security,<br>Data Science, Distributed Systems</h3>
+
+            <hr class="h-[2px] w-full bg-gray-400 mt-20">
+
+            <!-- Research Activities -->
+            <div id="research-activities" class="mt-20">
+                <h1 class="text-3xl text-center font-light text-gray-600">Research Activities</h1>
+                <div class="mt-4 flex flex-row gap-2">
+                    <img class="w-3 h-3 mt-2" src="../../assets/images/red-box.svg" alt="box">
+                    <p class="text-xl font-semibold text-gray-900">Research Fellowship from National Institute of
+                        Communication and Technology (NICT), Japan</p>
+                </div>
+                <ol class="list-disc flex flex-col gap-0 font-light pl-14 mt-4">
+                    <li>
+                        <p>Funded by NICT</p>
+                    </li>
+
+                    <li>
+                        <p>Period: Sep 2022 - Dec 2022</p>
+                    </li>
+
+                    <li>
+                        <p>Host: NAIST, Nara, Japan</p>
+                    </li>
+                </ol>
+
+
+                <div class="mt-4 flex flex-row gap-2">
+                    <img class="w-3 h-3 mt-2" src="../../assets/images/red-box.svg" alt="box">
+                    <p class="text-xl font-semibold text-gray-900">RISE Internal Research Grant</p>
+                </div>
+                <ol class="list-disc flex flex-col gap-0 font-light pl-14 mt-4">
+                    <li>
+                        <p>Funded by RISE, BUET</p>
+                    </li>
+
+                    <li>
+                        <p>Period: Apr 2022 - Apr 2024</p>
+                    </li>
+                </ol>
+
+
+                <div class="mt-4 flex flex-row gap-2">
+                    <img class="w-3 h-3 mt-2" src="../../assets/images/red-box.svg" alt="box">
+                    <p class="text-xl font-semibold text-gray-900">Developing a Model of Privacy-Preserved Anonymous
+                        National Clinical Data Warehouse (NCDW) of Bangladesh</p>
+                </div>
+                <ol class="list-disc flex flex-col gap-0 font-light pl-14 mt-4">
+                    <li>
+                        <p>Funded by Ubitrix, USA</p>
+                    </li>
+                    <li>
+                        <p>Period: Mar 2021 - Mar 2023</p>
+                    </li>
+                    <li>
+                        <p>Principle Investigator (2)</p>
+                    </li>
+                </ol>
+
+
+                <div class="mt-4 flex flex-row gap-2">
+                    <img class="w-3 h-3 mt-2" src="../../assets/images/red-box.svg" alt="box">
+                    <p class="text-xl font-semibold text-gray-900">DIVERSASIA – Embracing Diversity in ASIA through the
+                        Adoption of Inclusive Open Practices</p>
+                </div>
+                <ol class="list-disc flex flex-col gap-0 font-light pl-14 mt-4">
+                    <li>
+                        <p>Funded by European Union</p>
+                    </li>
+                    <li>
+                        <p>Period: Jan 2021 - Jan 2024</p>
+                    </li>
+                    <li>
+                        <p>Member</p>
+                    </li>
+                </ol>
+
+
+                <div class="mt-4 flex flex-row gap-2">
+                    <img class="w-3 h-3 mt-2" src="../../assets/images/red-box.svg" alt="box">
+                    <p class="text-xl font-semibold text-gray-900">Advanced Network/System Administration and Security
+                        Workshop</p>
+                </div>
+                <ol class="list-disc flex flex-col gap-0 font-light pl-14 mt-4">
+                    <li>
+                        <p>Funded by AsiaConnect</p>
+                    </li>
+                    <li>
+                        <p>Period: Jan 2019 - Dec 2019</p>
+                    </li>
+                    <li>
+                        <p>Trainer of the workshop</p>
+                    </li>
+                </ol>
+
+
+                <div class="mt-4 flex flex-row gap-2">
+                    <img class="w-3 h-3 mt-2" src="../../assets/images/red-box.svg" alt="box">
+                    <p class="text-xl font-semibold text-gray-900">Distributed and Cloud-based Network Defense System
+                        for NRENs (https://dcnds.asia/)</p>
+                </div>
+                <ol class="list-disc flex flex-col gap-0 font-light pl-14 mt-4">
+                    <li>
+                        <p>Funded by AsiaConnect</p>
+                    </li>
+                    <li>
+                        <p>Period: June 2018 - May 2020</p>
+                    </li>
+                    <li>
+                        <p>Worked as Trainer for BOTNET MITIGATION BEST PRACTICES AND SYSTEM EVALUATION WORKSHOP in
+                            Malaysia, Bangladesh, Indonesia, and Philippines.</p>
+                    </li>
+                    <li>
+                        <p>Worked as Trainer for CLOUD-BASED WEB SECURITY BEST PRACTICES AND SYSTEM CONFIGURATION
+                            OVERVIEW WORKSHOP in Bangladesh, Indonesia, Malaysia, and Philippines.</p>
+                    </li>
+                </ol>
+
+
+                <div class="mt-4 flex flex-row gap-2">
+                    <img class="w-3 h-3 mt-2" src="../../assets/images/red-box.svg" alt="box">
+                    <p class="text-xl font-semibold text-gray-900">Train the Trainer for Nationwide Teaching and
+                        Learning in Embedded System Design and Development</p>
+                </div>
+                <ol class="list-disc flex flex-col gap-0 font-light pl-14 mt-4">
+                    <li>
+                        <p>Funded by HEQEP, UGC</p>
+                    </li>
+                    <li>
+                        <p>Period: May 2017 - Sep 2018</p>
+                    </li>
+                    <li>
+                        <p>Co-PI of the project</p>
+                    </li>
+                </ol>
+
+
+            </div>
+
+            <!-- ------------------------------------------------------------- -->
+
+            <hr class="h-[2px] w-full bg-gray-400 mt-7">
+
+            <footer class="w-full mt-16">
+                <h1 class="text-center font-light text-gray-600">Copyright Asif © 2015 - 2023</h1>
+            </footer>
+        </div>
+    </div>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
