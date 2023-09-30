@@ -3,7 +3,7 @@ let isOpen = false
 
 const toggleMenu = () => {
     if (isOpen) {
-        sideMenu.style.left = '-280px'
+        sideMenu.style.left = '-350px'
         isOpen = false
     } else {
         sideMenu.style.left = '0'
